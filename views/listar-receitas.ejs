@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de receitas</title>
+
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você está na página de listagem de livros</h1>
+    <h2>
+         <%= nome %>
+    </h2>
+    <h3>
+         
+    </h3>
+
+    <ul>
+        <% receitas.forEach(receita => { %>
+            
+            <li>Receita: <%= receita.nome  %></li>
+
+            <li>Ingredientes: <%= receita.ingredientes  %></li>
+
+            <li>Modo de preparo: <%= receita.modo_preparo  %></li>
+        <% }); %>
+    </ul>
+    <!-- <ul>
+        <li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm6zQpp19EUKn4nSRkp2kfrkJxATH0Ah5m7g&s" alt="Capa do Livro">
+        </li>
+    </ul> -->
+</body>
+</html>
