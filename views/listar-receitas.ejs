@@ -23,11 +23,14 @@
     <ul>
         <% receitas.forEach(receita => { %>
             
-            <li>Receita: <%= receita.nome  %></li>
+            <li> 
+                <%= receita.nome  %>
+                <br>
+                <%= receita.ingredientes %>
+                <br>
+                <%=  receita.modo_preparo %>
+            </li>
 
-            <li>Ingredientes: <%= receita.ingredientes  %></li>
-
-            <li>Modo de preparo: <%= receita.modo_preparo  %></li>
         <% }); %>
     </ul>
     <!-- <ul>
